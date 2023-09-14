@@ -33,7 +33,7 @@
 
 输出：接收机头文件中的近似坐标与所有历元的所有卫星信息
 
-1. void MainWindow::**on\_LSM\_Button\_clicked**()
+2. void MainWindow::**on\_LSM\_Button\_clicked**()
 
 功能：运用最小二乘法计算接收机坐标的改正数；
 
@@ -41,7 +41,7 @@
 
 输出：通过最小二乘法解算的接收机坐标改正数与经过改正后的接收机坐标
 
-1. void MainWindow::**on\_KALMAN\_Button\_clicked**()
+3. void MainWindow::**on\_KALMAN\_Button\_clicked**()
 
 功能：运用卡尔曼滤波法计算接收机坐标的改正数；
 
@@ -49,7 +49,7 @@
 
 输出：通过卡尔曼滤波法解算的接收机坐标改正数与经过改正后的接收机坐标
 
-1. void MainWindow::**on\_KALMANCVButton\_clicked**()
+4. void MainWindow::**on\_KALMANCVButton\_clicked**()
 
 功能：运用卡尔曼滤波CV模型计算接收机坐标的改正数；
 
@@ -57,7 +57,7 @@
 
 输出：通过卡尔曼滤波CV模型解算的接收机坐标改正数与改正后的接收机坐标
 
-1. void MainWindow::**on\_KALMANCAButton\_clicked**()
+5. void MainWindow::**on\_KALMANCAButton\_clicked**()
 
 功能：运用卡尔曼滤波CA模型计算接收机坐标的改正数；
 
@@ -65,7 +65,7 @@
 
 输出：通过卡尔曼滤波CA模型解算的接收机坐标改正数与改正后的接收机坐标
 
-1. drawxx::**drawxx**(Eigen::MatrixXd POS1, int geshu1, double \*APPROX1, QWidget \*parent)
+6. drawxx::**drawxx**(Eigen::MatrixXd POS1, int geshu1, double \*APPROX1, QWidget \*parent)
 
 功能：对解算改正后的X坐标进行绘图
 
@@ -73,7 +73,7 @@
 
 输出：X坐标的曲线图
 
-1. drawyy::**drawyy**(Eigen::MatrixXd POS1, int geshu1, double \*APPROX1, QWidget \*parent)
+7. drawyy::**drawyy**(Eigen::MatrixXd POS1, int geshu1, double \*APPROX1, QWidget \*parent)
 
 功能：对解算改正后的Y坐标进行绘图
 
@@ -81,7 +81,7 @@
 
 输出：Y坐标的曲线图
 
-1. drawzz::**drawzz**(Eigen::MatrixXd POS1, int geshu1, double \*APPROX1, QWidget \*parent)
+8. drawzz::**drawzz**(Eigen::MatrixXd POS1, int geshu1, double \*APPROX1, QWidget \*parent)
 
 功能：对解算改正后的Z坐标进行绘图
 
@@ -89,7 +89,7 @@
 
 输出：Z坐标的曲线图
 
-1. void MainWindow::**baocun**()
+9. void MainWindow::**baocun**()
 
 功能：对解算结果进行保存
 
@@ -153,6 +153,7 @@
 
 ## 4.程序界面
 
+![github](https://github.com/Wang-Jie-Lucid-Sheep/Optimal_Estimation_C-/blob/main/Picture/Picture.png)
 ## 5.程序数据格式说明
 ### 5.1原始数据格式
 数据文件格式：头文件+逐次历元的卫星数据
